@@ -1,0 +1,36 @@
+:root {
+  --primery-color: #202020;
+  --font-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primery-color);
+}
+
+.container {
+  max-width: 1440px;
+  max-height: 500px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 20px 10px;
+  border: 1px dashed var(--font-color);
+  overflow: hidden;
+}
+
+.elements-item {
+  box-shadow: 0 0 2px 0px var(--font-color);
+  border-radius: 2px;
+
+  padding: 10px;
+  margin-bottom: 10px;
+  color: var(--font-color);
+}
+
+.elements-item.active {
+  box-shadow: 0 0 6px 0px red;
+}
